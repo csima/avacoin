@@ -1,7 +1,7 @@
 // url:https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-contracts-using-truffle-openzeppelin-1b7a5dae99b6
 
 var AvaCoinCrowdsale = artifacts.require("./AvaCoinCrowdsale.sol");
-var AvaAccess = artifacts.require("./AvaAccess.sol");
+//var AvaAccess = artifacts.require("./AvaAccess.sol");
 
 module.exports = function(deployer, network, accounts) {
   console.log("Network: " + network);
@@ -24,7 +24,7 @@ const duration = {
 async function liveDeploy(deployer, accounts){
   const BigNumber = web3.BigNumber;
   const RATE = new web3.BigNumber(100);
-  const startTime = latestTime() + duration.seconds(10);
+  const startTime = latestTime() + duration.minutes(10);
   const endTime =   startTime + duration.days(35);
   const walletAccount = accounts[0]
   
@@ -37,11 +37,12 @@ async function liveDeploy(deployer, accounts){
     const token = await instance.token.call();
     console.log('Token Address: ', token);
 
+    /*
     return deployer.deploy(AvaAccess, token, walletAccount).then(async () => {
       const access = await AvaAccess.deployed();
       const access_addr = await access.address;
       console.log("AvaAccess Address: " + access_addr);
-    })
+    })*/
 
   })
 }
