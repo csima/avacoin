@@ -1,0 +1,38 @@
+
+
+AvaAccess.deployed().then(inst => {access = inst})
+AvaCoinCrowdsale.deployed().then(inst => {crowd = inst})
+crowd.token().then(addr => {coin_address = addr})
+
+token = AvaCoin.at(coin_address)
+crowd.sendTransaction({from: web3.eth.accounts[0], value: web3.toWei(.1,"ether")})
+token.approve(access.address, web3.toWei(.01,"ether"))
+token.balanceOf(web3.eth.accounts[0])
+token.balanceOf(access.address)
+token.allowance(web3.eth.accounts[0], access.address).then(bal => {allowed = bal})
+
+access = AvaAccess.at("0x1d6651f5191f48eF3E4f7378c22F59e383229Da3")
+token = AvaCoin.at("0x535a4955237783AD0fE37464e1693588EdEE3B43")
+crowd = AvaCoinCrowdsale.at("0x2550F7A2F766d2709d4B4212C620276e57B397dD")
+
+JSON.stringify(token.abi)
+
+// events
+token.Transfer().watch(function(err, result) {if (err) {console.log("Event error:" + err);return;}console.log(result.args)})
+
+// Figure out testing - tbd
+ it("Test transfer throw on not enough currency.", function() {
+        var meta;
+        var account_one = accounts[0];
+        var account_two = accounts[1];
+
+        var amount = 30;
+
+        return XenuCoinContract.deployed().then(function(instance) {
+            meta = instance;
+            return meta.transfer(account_one, amount, { "from": account_two});
+        }).then(assert.fail).catch(function(error) {
+            assert.include(error.message, "invalid opcode", 
+                "Transferring more money than you have should throw a VM exception.");
+        });
+    });

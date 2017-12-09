@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<!-- Document Settings -->
+	<meta charset="UTF-8" />
+
+	<!-- Page Meta -->
+	<title>AVA Access</title>
+	<meta name="description" content="Restricted Ava Content" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Styles -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic%7CRoboto+Slab:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+
+	<!-- Scripts -->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<main id="main" class="site-main">
+
+			<!-- Front -->
+			<div id="front" class="site-front">
+				<div class="inner">
+
+					<!-- Header -->
+					<header class="site-header">
+						<p class="site-logo fade-in"><img src="images/ava_logo.png" width="150" height="60" alt="AVA Logo" /></p>
+						<h1 class="site-title screen-reader-text">AVA</h1>
+					</header>
+
+					<section class="content">
+						<h2 class="subtitle">Restricted</h2>
+
+						<div class="newsletter">
+							<p id="conversion" class="subtitle">1 Ava Coin to access</p>
+							<a href="#" class="modal-note" id="etherscan"></a>
+							
+							<div id="mc_embed_signup">
+								<form action="javascript:void(0);" id="approvetoken" >
+										<input type="submit" value="Approve Token"  class="button" />
+								</form>
+								<div id="mce-loading"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div>
+								<div id="mce-response"></div>
+							</div>
+							
+						</div>
+					</section>
+
+					<!-- Modal toggle -->
+					<div class="modal-toggle">
+						<span class="modal-note"></span>
+						<a href="#" class="modal-note" id="etherscan"></a>
+						<span class="modal-note" id="balance"></span>						
+					</div>
+
+				</div><!-- .inner -->
+			</div><!-- .site-front -->
+
+			<!-- Modal (About Us) -->
+			<div id="modal" class="site-modal">
+					<div class="modal-scrollable">
+						<div class="inner">
+	
+							<!-- Modal toggle -->
+							<div class="modal-toggle">
+								<button id="modal-close"><span class="screen-reader-text">Close</span><span aria-hidden="true" class="icon-plus"></span></button>
+							</div>
+	
+							<section class="content">
+								<h3 class="subtitle">Transaction</h3>							
+								<p><div id="processing"></div></p>
+								<p><div class="modal-note" id="tx_status"></div></p>
+								<p><div id="secret_blog"></div></p>	
+								<input type="submit" id="sendtoken" value="Transfer Token"  class="button" />								
+							</section>
+	
+						</div><!-- .inner -->
+					</div><!-- .modal-scrollable -->
+				</div><!-- .site-modal -->
+
+				
+		</main><!-- .site-main -->
+	</div><!-- .wrap -->
+
+	<!-- Background overlay -->
+	<div class="overlay"></div>
+
+	<!-- Loading... -->
+	<div id="preload">
+		<div id="preload-content">
+			<div class="preload-spinner">
+				<span class="bounce1"></span>
+				<span class="bounce2"></span>
+				<span class="bounce3"></span>
+			</div>
+			<div class="preload-text">Loading...</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script> 
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script src="js/safe.js"></script>	
+
+</body>
+</html>

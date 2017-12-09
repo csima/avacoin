@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<!-- Document Settings -->
+	<meta charset="UTF-8" />
+
+	<!-- Page Meta -->
+	<title>AVA Coin ICO</title>
+	<meta name="description" content="Launch of AVA Coin" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Styles -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic%7CRoboto+Slab:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+
+	<!-- Scripts -->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<main id="main" class="site-main">
+
+			<!-- Front -->
+			<div id="front" class="site-front">
+				<div class="inner">
+
+					<!-- Header -->
+					<header class="site-header">
+						<p class="site-logo fade-in"><img src="images/ava_logo.png" width="150" height="60" alt="AVA Logo" /></p>
+						<h1 class="site-title screen-reader-text">AVA</h1>
+					</header>
+
+					<section class="content">
+						<h2 class="section-title">Send AVA Coin</h2>
+
+
+						<!-- Newsletter Subscriptions -->
+						<div class="newsletter">
+							<p id="balance" class="subtitle">AVA Coin</p>
+							<a href="#" class="modal-note" id="etherscan"></a>
+							
+							<div id="mc_embed_signup">
+								<form action="javascript:void(0);" id="send" name="mc-embedded-subscribe-form" >
+									<div class="mc-field-group">
+										<input type="text" value="" name="EMAIL" class="required digits" id="transfer-input" placeholder="Amount of AVA Coin" />
+									</div>
+									<div class="mc-field-group">
+											<input type="text" value="" id="transfer-input" placeholder="Recieving Address" />
+										</div>
+									<div class="clear">
+										<input type="submit" value="Transfer" name="subscribe" id="transfer-button" class="button" />
+									</div>
+								</form>
+								<div id="mce-loading"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div>
+								<div id="mce-response"></div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Modal toggle -->
+					<div class="modal-toggle">
+						<span class="modal-note"></span>
+						<a href="#" class="modal-note" id="etherscan"></a>
+						<span class="modal-note">Read More</span>						
+						<button id="modal-open"><span class="screen-reader-text">Open</span><span aria-hidden="true" class="icon-plus"></span></button>						
+					</div>
+
+				</div><!-- .inner -->
+			</div><!-- .site-front -->
+
+			<!-- Modal (About Us) -->
+			<div id="modal" class="site-modal">
+				<div class="modal-scrollable">
+					<div class="inner">
+
+						<!-- Modal toggle -->
+						<div class="modal-toggle">
+							<button id="modal-close"><span class="screen-reader-text">Close</span><span aria-hidden="true" class="icon-plus"></span></button>
+						</div>
+
+						<section class="content">
+							<h2 class="section-title">About AVA Coin</h2>
+
+							<!-- Columns -->
+							<div class="row">
+								<div class="one-half">
+									<p>In celebration of the birth of my first daughter Ava, we are announcing AVA Coin! Having AVA Coin will allow you to gain privileged access to Ava photos and insights into her daily life and growing up.</p>
+									<p><div id="crowd_address"></div></p>
+									<p><div id="token_address"></div></p>
+								</div>
+								<div class="one-half">
+									<h3><i class="fa-envelope" aria-hidden="true"></i> Email</h3>
+									<p>support@theavacoin.com</p>
+								</div>
+							</div>
+
+						</section>
+
+					</div><!-- .inner -->
+				</div><!-- .modal-scrollable -->
+			</div><!-- .site-modal -->
+
+		</main><!-- .site-main -->
+	</div><!-- .wrap -->
+
+	<!-- Background overlay -->
+	<div class="overlay"></div>
+
+	<!-- Loading... -->
+	<div id="preload">
+		<div id="preload-content">
+			<div class="preload-spinner">
+				<span class="bounce1"></span>
+				<span class="bounce2"></span>
+				<span class="bounce3"></span>
+			</div>
+			<div class="preload-text">Loading...</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script> 
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script src="js/transfer.js"></script>	
+
+</body>
+</html>
