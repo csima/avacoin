@@ -25,7 +25,7 @@ async function liveDeploy(deployer, accounts){
   const BigNumber = web3.BigNumber;
   const RATE = new web3.BigNumber(100);
   const startTime = latestTime() + duration.seconds(10);
-  const endTime =   startTime + duration.days(30);
+  const endTime =   startTime + duration.days(35);
   const walletAccount = accounts[0]
   
   console.log("Start Time: " + startTime);
