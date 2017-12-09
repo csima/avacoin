@@ -13,12 +13,12 @@ Although the code is not much (please no comments, it is ugly) what I did learn 
 
 # Code
 The code is pretty simple. It is an easy read. 
-[/contract](contract/) - is the truffle deployment folder. All contracts, migrations etc 
-[/website](website/) - is the avacoin crowdsale website. The frontend.
+- [/contract](contract/) - is the truffle deployment folder. All contracts, migrations etc 
+- [/website](website/) - is the avacoin crowdsale website. The frontend.
 
 ## Important Files
 [deploy.sh](website/deploy.sh) You will notice this pulls from my docker repo which is private. You will need to change this to your docker image which is easy because the [Dockerfile](website/Dockerfile) is very easy.
 
-[main.js] (website/js/main.js) This contains most of the code for the frontend. You will need to modify the 'token_address' and 'crowd_address' to the deployed addresses of those contracts. 
+[main.js](website/js/main.js) This contains most of the code for the frontend. You will need to modify the 'token_address' and 'crowd_address' to the deployed addresses of those contracts. 
 
 That's it! If you have any problems or want some help you can file an issue or ping me on keybase (https://keybase.io/csima)
