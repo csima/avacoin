@@ -7,14 +7,18 @@ Although the code is not much (please no comments, it is ugly) what I did learn 
 
 - Auth0 has the best written introduction to ethereum and blockchain I have found: https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts/
 - Go code some tutorials - here is the list of the most helpful https://groups.diigo.com/group/cryptodev
-- This code uses truffle framework for development (http://truffleframework.com/) but I ended up deploying to main net with Parity
+- This code uses [truffle framework for development](http://truffleframework.com/) but I ended up deploying to main net with Parity
 - Gas is a PIA. Read this (https://hudsonjameson.com/2017-06-27-accounts-transactions-gas-ethereum/)
 - This guy has started a great walkthru on low level networking - I'm going to do this next (https://ocalog.com/post/10/)
 
 # Code
-The code is pretty simple. 
-/contract - is the truffle deployment folder. All contracts, migrations etc 
-/website - is the avacoin crowdsale website. The frontend.
+The code is pretty simple. It is an easy read. 
+[/contract](contract/) - is the truffle deployment folder. All contracts, migrations etc 
+[/website](website/) - is the avacoin crowdsale website. The frontend.
 
 ## Important Files
-[a relative link](website/deploy.sh) You will notice this pulls from my docker repo which is private. You will need to change this to your docker image which is easy because the [a relative_link](website/Dockerfile) Docker file is very easy.
+[deploy.sh](website/deploy.sh) You will notice this pulls from my docker repo which is private. You will need to change this to your docker image which is easy because the [Dockerfile](website/Dockerfile) is very easy.
+
+[main.js] (website/js/main.js) This contains most of the code for the frontend. You will need to modify the 'token_address' and 'crowd_address' to the deployed addresses of those contracts. 
+
+That's it! If you have any problems or want some help you can file an issue or ping me on keybase (https://keybase.io/csima)
