@@ -1,4 +1,4 @@
-
+// Random snippets of useful stuff for truffle interaction
 
 AvaAccess.deployed().then(inst => {access = inst})
 AvaCoinCrowdsale.deployed().then(inst => {crowd = inst})
@@ -11,9 +11,6 @@ token.balanceOf(web3.eth.accounts[0])
 token.balanceOf(access.address)
 token.allowance(web3.eth.accounts[0], access.address).then(bal => {allowed = bal})
 
-access = AvaAccess.at("0x1d6651f5191f48eF3E4f7378c22F59e383229Da3")
-token = AvaCoin.at("0x535a4955237783AD0fE37464e1693588EdEE3B43")
-crowd = AvaCoinCrowdsale.at("0x2550F7A2F766d2709d4B4212C620276e57B397dD")
 
 JSON.stringify(token.abi)
 
