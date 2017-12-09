@@ -10,9 +10,12 @@ Although the code is not much (please no comments, it is ugly) what I did learn 
 - This code uses [truffle framework for development](http://truffleframework.com/) but I ended up deploying to main net with Parity
 - Gas is a PIA. Read this (https://hudsonjameson.com/2017-06-27-accounts-transactions-gas-ethereum/)
 - This guy has started a great walkthru on low level networking - I'm going to do this next (https://ocalog.com/post/10/)
+- Just as an FYI here is a collection of security related material on ethereum (https://groups.diigo.com/group/cryptosec)
 
 # Code
-The code is pretty simple. It is an easy read. 
+The code is pretty simple. It is an easy read. I used [OpenZepplin](https://github.com/OpenZeppelin/zeppelin-solidity) as a base for the contracts. 
+>OpenZeppelin is a library for writing secure Smart Contracts on Ethereum.
+
 - [/contract](contract/) - is the truffle deployment folder. All contracts, migrations etc 
 - [/website](website/) - is the avacoin crowdsale website. The frontend.
 
