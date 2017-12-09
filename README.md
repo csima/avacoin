@@ -13,7 +13,8 @@ Although the code is not much (please no comments, it is ugly) what I did learn 
 - Just as an FYI here is a collection of security related material on ethereum (https://groups.diigo.com/group/cryptosec)
 
 # Code
-The code is pretty simple. It is an easy read. I used [OpenZepplin](https://github.com/OpenZeppelin/zeppelin-solidity) as a base for the contracts. 
+The code is pretty simple. It is an easy read. I used [OpenZepplin](https://github.com/OpenZeppelin/zeppelin-solidity) as a base for the contracts. I applaud this approach as it really made this easy and btw they have some fantastic written articles.
+
 >OpenZeppelin is a library for writing secure Smart Contracts on Ethereum.
 
 - [/contract](contract/) - is the truffle deployment folder. All contracts, migrations etc 
