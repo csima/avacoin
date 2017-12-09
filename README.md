@@ -17,3 +17,4 @@ The code is pretty simple.
 /website - is the avacoin crowdsale website. The frontend.
 
 ## Important Files
+[a relative link](website/deploy.sh) You will notice this pulls from my docker repo which is private. You will need to change this to your docker image which is easy because the [a relative_link](website/Dockerfile) Docker file is very easy.
